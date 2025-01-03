@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .container {
+            background-color: rgb(34, 36, 53);
+            width: 260px;
+            height: 420px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px;
+            border-radius: 10px;
+            padding-right: 30px;
+            padding-left: 30px;
+            
+        }
+
+        .screen {
+            padding: 10px  ;
+            margin: 13px 0;
+            border-radius: 5px;
+            display: flex;
+            justify-content: flex-end;
+            font-weight: 400;
+            font-size: 20px;
+        }
+
+        .screen p{
+            color: white;
+        }
+
+        .ac-button {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 4px;
+        }
+
+        .numb-1 {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 4px;
+        }
+
+        .numb-2 {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 4px;
+        }
+
+        .numb-3 {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 4px;
+        }
+        .numb-4 {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 4px;
+        }
+        
+        button {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            box-shadow: -5px -6px 10px rgba(255, 255, 255, 0.5), 5px 8px 9px rgba(0, 0, 0, 0.5);
+
+            border: none; 
+            margin-bottom: 4px;
+            font-weight: bold;
+            font-size: 17px;
+            background-color: white;
+        }
+        
+        .c {
+            color: rgb(12, 150, 120);
+        }
+
+        .del {
+            color: rgb(12, 150, 120);
+        }
+
+        
+
+        .w {
+            color: rgb(12, 150, 120);
+            width: 100px;
+        }
+
+        
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="screen">
+            <p>61</p>
+        </div>
+        <div class="ac-button">
+            <button class="c">AC</button>
+            <button class="del">DE</button>
+            <button class="del">.</button>
+            <button class="del">/</button>
+        </div>
+        <div class="numb-1">
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="del">*</button>
+        </div>
+        <div class="numb-2">
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="del">-</button>
+        </div>
+        <div class="numb-3">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="del">+</button>
+        </div>
+        <div class="numb-4">
+            <button>00</button>
+            <button>0</button>
+            <button class="q w">=</button>
+            
+        </div>
+    </div>
+</body>
+
+</html>
