@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: white;
+            width: 400px;
+            height: 600px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 20px;
+        }
+
+        .sub-container div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .sign-up-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .sign-up-div h2{
+            margin-top: 60px;
+            margin-bottom: 2px;
+        }
+
+        .sign-up-div p{
+            margin-top: 0
+        }
+
+        .input-div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .input-div input{
+            margin: 5px;
+            height: 30px;
+            width: 80%;
+            border-radius: 6px;
+            border: none;
+            background-color: rgb(245, 208, 194);
+            outline: none;
+        }
+
+        .button-div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+
+        .button-div button{
+            margin-top: 5px;
+            width: 50%;
+            height: 40px;
+            border-radius: 30px;
+            border: none;
+            color: white;
+            background-color: rgb(235, 49, 3);
+        }
+
+        .button-div div{
+            border: 2px rgb(235, 49, 3) solid;
+            width: 80%;
+            height: 30px;
+            border-radius: 20px;
+        }
+
+        .button-div div p{
+            font-size: smaller;
+        }
+
+        .button-div div p span{
+            font-weight: 900;
+        }
+
+        .span-div{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 5px;
+            align-items: center;
+        }
+
+        .span-div span{
+            color: rgb(46, 3, 235);
+            margin: 5px;
+            align-items: center;
+            font-size: smaller;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .span-div p{
+            font-size: smaller;
+        }
+
+        .div-div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 5px;
+            
+        }
+
+        .div-div div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .div1{
+            width: 40%;
+            background-color: black;
+            height: 5px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        .div2{
+            width: 10%;
+            background-color: rgb(235, 49, 3);
+            height: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        .input-image{
+            background-color: rgb(245, 208, 194);
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            border-radius: 10px;
+            
+        }
+
+        .input-image img{
+            height: 15px;
+            width: 15px;
+        }
+
+        .span-divs{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        
+        .span-divs img{
+            height: 15px;
+            width: 15px;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sign-up-div">
+            <h1>WELCOME TO JUSTFAB</h1>
+            <h2>Sign up</h2>
+            <p>Create your account</p>
+        </div>
+
+        <div class="input-div">
+            <div class="input-image">
+                <img src="image/user.png" alt="">
+                <input type="text" placeholder="Username">
+            </div>
+            <div class="input-image">
+                <img src="image/email.png" alt="">
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="input-image">
+                <img src="image/locked-computer.png" alt="">
+                <input type="text" placeholder="Password">
+            </div>
+            <div class="input-image">
+                <img src="image/locked-computer.png" alt="">
+                <input type="text" placeholder="Confirm Password">
+            </div>
+        </div>
+
+        
+
+        <div class="button-div">
+            <button>Sign up</button>
+            <p>Or</p>
+            <div class="span-divs">
+                <img src="image/google.png" alt="">
+                <p>Log in with <span>Google</span></p>
+            </div>
+        </div>
+
+        <div class="span-div">
+            <p>Already have an account?</p> 
+            <span>Login</span>
+        </div>
+
+        <div class="div-div">
+            <div class="div1"></div>
+            <div class="div2"></div>
+        </div>
+    </div>
+</body>
+</html>
