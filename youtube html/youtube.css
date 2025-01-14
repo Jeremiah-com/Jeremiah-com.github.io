@@ -1,0 +1,1184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* ================ Defaults ========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.body-active {
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+
+.body-active span,
+.body-active i {
+  color: black;
+}
+
+.material-symbols-outlined {
+  font-size: 25px;
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 20,
+    'opsz' 24
+}
+
+.home {
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 200,
+    'GRAD' 20,
+    'opsz' 24
+}
+
+/* ============================================================================================================== */
+.span-active {
+  font-size: 25px;
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 200,
+    'GRAD' 20,
+    'opsz' 24
+}
+
+/* ===================== NavBar ========================= */
+
+.nav {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: black;
+  width: 100%;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  width: 100%;
+}
+
+.navbar i {
+  font-size: 20px;
+}
+
+.navbar .menu,
+.navbar .data,
+.navbar .control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .menu {
+  margin-right: 20px;
+}
+
+.navbar i,
+.navbar button {
+  cursor: pointer;
+}
+
+.navbar .menu i {
+  font-size: 30px;
+  padding-right: 10px;
+}
+
+.navbar .menu img {
+  width: 100px;
+}
+
+.navbar .menu .white {
+  display: none;
+}
+
+.navbar .menu a button {
+  border: none;
+  background-color: transparent;
+}
+
+.navbar .data {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .data .input {
+  border: 1px solid rgba(128, 128, 128, 0.254);
+  padding: 6px 0px;
+  border-radius: 50px 0px 0px 50px;
+  width: 85%;
+  background-color: rgba(128, 128, 128, 0.133);
+}
+
+.navbar .data input {
+  border: none;
+  outline: none;
+  padding: 5px 20px;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+}
+
+.navbar .data input::placeholder {
+  color: white;
+  font-size: 16px;
+}
+
+.navbar .data button {
+  background-color: rgb(36, 36, 36);
+  border: none;
+  padding: 8px 20px;
+  border-radius: 0px 50px 50px 0px;
+}
+
+.navbar .data .voice {
+  background-color: rgb(36, 36, 36);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.navbar .control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .control .search,
+.navbar .control .search1 {
+  display: none;
+}
+
+.navbar .control a {
+  border: none;
+  background-color: transparent;
+}
+
+.navbar .control .up {
+  display: none;
+  rotate: 90deg;
+}
+
+.navbar .choose {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .control a .bell {
+  border: none;
+  background-color: transparent;
+  margin: 0px 0px 0px 15px;
+}
+
+.navbar .control .user {
+  width: 35px;
+  height: 35px;
+}
+
+.navbar .control .user img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.options {
+  overflow: auto;
+  white-space: nowrap;
+  width: 90%;
+  margin: auto;
+  padding: 10px 0 20px 0;
+  margin-left: 100px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.options::-webkit-scrollbar {
+  display: none;
+}
+
+.options a {
+  display: inline-block;
+  padding: 8px 10px;
+  background-color: rgba(128, 128, 128, 0.254);
+  border-radius: 10px;
+  font-size: 15px;
+  margin: 0 3px;
+  transition: background-color 0.15s;
+}
+
+.options a:hover {
+  background-color: rgba(255, 255, 255, 0.215);
+}
+
+.options a:nth-of-type(1) {
+  background-color: white;
+  color: black;
+}
+
+.notification-count {
+  background-color: rgba(206, 5, 5, 0.959);
+  border: none;
+  padding: 2px 4px;
+  border-radius: 10px;
+  position: relative;
+  right: 12px;
+  bottom: 8px;
+}
+
+/* ==========Light theme=================================================================================== */
+.nav-active {
+  background: white;
+  transition: 0.3s;
+}
+
+.nav-active a {
+  color: black;
+}
+
+.navbar-active .menu .dark {
+  display: none;
+}
+
+.navbar-active .menu .white {
+  display: block;
+  transition: 0.3s;
+}
+
+.nav-active .menu a button i {
+  color: black;
+}
+
+.nav-active .data button,
+.nav-active .data div .voice {
+  background: rgb(210, 210, 210)
+}
+
+.nav-active .data .input {
+  background: white;
+  color: black !important;
+}
+
+.nav-active .data input::placeholder {
+  color: black !important;
+}
+
+
+.options-active a:nth-of-type(1) {
+  background: black;
+  color: white;
+}
+
+.nav input {
+  color: rgb(255, 255, 255) !important;
+}
+
+.nav-active input {
+  color: rgb(0, 0, 0) !important;
+}
+
+.options-active a {
+  background-color: rgba(212, 212, 212, 0.463);
+  transition: 0.3s;
+}
+
+.options-active a:hover {
+  background-color: rgba(221, 221, 221, 0.872);
+}
+
+.mode-active {
+  background: white !important;
+  transition: 0.3s;
+}
+
+.mode-active div:hover {
+  background-color: rgba(207, 205, 205, 0.348);
+}
+
+.mode-active div h6 {
+  color: black;
+}
+
+.nav-active .choose .light_mode {
+  display: none;
+}
+
+.nav-active .choose .dark_mode {
+  display: block;
+}
+
+.navbar .light_mode {
+  display: block;
+}
+
+.navbar .dark_mode {
+  display: none;
+}
+
+.shorts-active p,
+.shorts-active .white {
+  color: black !important;
+}
+
+.aside-active2 {
+  background-color: white;
+  transition: 0.3s;
+}
+
+.aside-active2 p {
+  color: black;
+}
+
+.right-active2 {
+  background-color: white !important;
+}
+
+.right-active2 .right-scroll {
+  background-color: white !important;
+}
+
+.right-active2 .right-scroll p {
+  color: black;
+}
+
+
+/* =========================== Aside =============================== */
+aside {
+  position: fixed;
+  overflow: auto;
+  white-space: nowrap;
+  width: 250px;
+  height: 100vh;
+  top: 70px;
+  -ms-overflow-style: none;
+  scrollbar-width: 20px;
+  background: black;
+  z-index: 300;
+  display: none;
+  padding-bottom: 100px;
+}
+
+aside::-webkit-scrollbar {
+  background-color: transparent;
+  width: 8px;
+}
+
+aside::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 20px;
+
+}
+
+aside .menu {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 15px;
+  align-items: center;
+}
+
+aside .menu img {
+  width: 100px;
+  margin-left: 20px;
+}
+
+aside i {
+  font-size: 30px;
+}
+
+aside .menu a button {
+  border: none;
+  background-color: transparent;
+}
+
+aside div {
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+aside div:last-child {
+  color: gray;
+  font-size: 15px;
+}
+
+aside p {
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+aside p:first-child {
+  background-color: rgba(128, 128, 128, 0.292);
+}
+
+aside p:hover,
+aside div:hover {
+  background-color: rgba(128, 128, 128, 0.292);
+}
+
+aside .privacy a {
+  color: rgb(182, 182, 182);
+}
+
+aside .privacy:hover {
+  background-color: transparent;
+}
+
+aside h3 {
+  padding: 10px 20px;
+  font-weight: 300;
+}
+
+aside span {
+  vertical-align: middle;
+  padding-right: 10px;
+}
+
+aside .down {
+  rotate: 90deg;
+  margin-left: -6px;
+}
+
+aside hr {
+  margin: 10px 0;
+}
+
+aside .icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+aside img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+/* ========================== Aside-Right ====================================================================== */
+.right {
+  position: fixed;
+  top: 10px;
+  right: 70px;
+  width: 300px;
+  height: 100vh;
+  background-color: rgb(41, 41, 41);
+  z-index: 200;
+  border-radius: 10px;
+  display: none;
+}
+
+.right .top-right-scroll {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  padding: 10px 0 0 0;
+}
+
+.right .top-right-scroll div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.right .top-right-scroll div .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  text-align: start;
+  margin-left: 30px;
+  gap: 2px;
+  position: relative;
+  left: -30px;
+}
+
+.right .top-right-scroll p {
+  padding-left: 70px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.right .top-right-scroll p a {
+  color: rgb(0, 145, 255);
+  font-size: 15px;
+}
+
+.right .top-right-scroll div .img {
+  width: 100px;
+}
+
+.right .top-right-scroll div .img img {
+  object-fit: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+/* ======================= Right-Scroll =================== */
+.right .right-scroll {
+  position: fixed;
+  top: 135px;
+  right: 70px;
+  overflow: auto;
+  white-space: nowrap;
+  width: 300px;
+  height: 550px;
+  -ms-overflow-style: none;
+  scrollbar-width: 20px;
+  background-color: rgb(41, 41, 41);
+  padding-bottom: 30px;
+  z-index: 200;
+  border-radius: 10px;
+}
+
+.right .right-scroll p {
+  padding: 5px;
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+.right .right-scroll div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.right .right-scroll p:hover,
+.right .right-scroll div:hover {
+  background-color: rgba(128, 128, 128, 0.275);
+}
+
+.right .right-scroll div p:hover {
+  background-color: transparent;
+}
+
+
+.right-scroll::-webkit-scrollbar {
+  background-color: transparent;
+  width: 8px;
+}
+
+.right-scroll::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 20px;
+}
+
+.right-scroll span {
+  padding-right: 10px;
+  vertical-align: middle;
+}
+
+.aside div .dark_mode {
+  display: none;
+}
+
+
+/* ===========XX=============== Aside-Right ==========XX================= */
+
+
+
+/* ========================== Toggler ================================ */
+.aside-active {
+  display: block;
+}
+
+.right-active {
+  display: block;
+}
+
+/* ============XX============== Toggler ============XX==================== */
+
+
+/* =================================== Dashboard =============================== */
+.aside {
+  position: fixed;
+  top: 70px;
+  left: 10px;
+  z-index: 200;
+  background-color: black;
+}
+
+.aside div {
+  padding: 10px 0px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.aside div:hover {
+  background-color: rgba(128, 128, 128, 0.275);
+  border-radius: 10px;
+}
+
+.aside div i {
+  font-size: 20px;
+}
+
+.aside h6 {
+  padding-top: 5px;
+  font-weight: 400;
+}
+
+.aside .down {
+  rotate: 270deg;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 90%;
+  margin: auto;
+  margin-top: 150px;
+  margin-left: 100px;
+}
+
+.infinity {
+  padding-bottom: 50px;
+  margin-top: 0px;
+}
+
+
+.dashboard .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.dashboard .grid .card {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard .grid .card img {
+  border-radius: 10px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.dashboard .grid .card>img:hover {
+  border-radius: 0px;
+}
+
+.dashboard .grid .card p {
+  padding-left: 60px;
+  color: gray;
+}
+
+.dashboard .grid .card p span {
+  color: gray;
+}
+
+.dashboard .grid .card .time {
+  text-align: right;
+  position: relative;
+  bottom: 30px;
+  width: 100%;
+}
+
+.dashboard .grid .card .time span {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  z-index: 1;
+  padding: 2px;
+  margin-right: 8px;
+}
+
+.dashboard .grid .card:hover .time span {
+  color: transparent;
+  background-color: transparent;
+}
+
+.dashboard .grid .card .message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  padding-top: 10px;
+}
+
+.dashboard .grid .card .message img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.dashboard .grid .card .message .dot {
+  color: transparent;
+}
+
+.dashboard .grid .card:hover .message .dot {
+  color: white;
+}
+
+.dashboard hr {
+  border: 2px solid gray;
+  margin-top: 50px;
+}
+
+
+/* =================================== Shorts =============================== */
+.section-for-shorts {
+  display: grid;
+  grid-template: 1fr;
+  width: 90%;
+  margin: auto;
+  margin-left: 100px;
+}
+
+.section-for-shorts .shorts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10px;
+}
+
+.section-for-shorts .shorts i.funnel {
+  color: red;
+  margin-right: 5px;
+  font-size: 25px;
+}
+
+.section-for-shorts .shorts .funnel-p {
+  font-size: 25px;
+}
+
+.section-for-shorts .shorts i.white {
+  color: white;
+  font-size: 20px;
+  margin-right: 0;
+}
+
+.section-for-shorts .shorts-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
+.section-for-shorts .shorts-grid .one,
+.section-for-shorts .shorts-grid .two,
+.section-for-shorts .shorts-grid .three,
+.section-for-shorts .shorts-grid .four,
+.section-for-shorts .shorts-grid .five {
+  display: none;
+}
+
+.section-for-shorts .shorts-card .card-shorts {
+  transition: transform 0.3s;
+}
+
+.section-for-shorts .shorts-card .card-shorts:hover {
+  transform: scale(1.01);
+}
+
+.section-for-shorts .shorts-card .card-shorts img {
+  width: 100%;
+  height: 350px;
+}
+
+.section-for-shorts .shorts-card .card-shorts .message-shorts {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.section-for-shorts .shorts-card .card-shorts .message-shorts .dot {
+  color: transparent;
+}
+
+.section-for-shorts .shorts-card .card-shorts:hover .message-shorts .dot {
+  color: white;
+}
+
+.section-for-shorts .shorts-card .card-shorts p.views {
+  color: gray;
+}
+
+.section-for-shorts hr {
+  border: 2px solid gray;
+  margin-bottom: 50px;
+}
+
+.section-for-shorts button {
+  background-color: transparent;
+  border: none;
+  padding: 10px 0;
+  margin-bottom: 2px;
+}
+
+.section-for-shorts button:hover {
+  background-color: gray;
+}
+
+
+/* ================ MediaQuery (big tab)================ */
+@media only screen and (max-width: 1987px) {
+  .dashboard .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .right .right-scroll {
+    position: fixed;
+    height: 100vh;
+    padding-bottom: 150px;
+  }
+}
+
+
+@media only screen and (max-width: 1733px) {
+  .dashboard .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+
+@media only screen and (max-width: 1405px) {
+  .dashboard .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+}
+
+
+@media only screen and (max-width: 1100px) {
+
+  .navbar .choose {
+    margin-left: 20px;
+  }
+
+  .navbar .menu {
+    margin-right: 50px;
+  }
+
+  .navbar .control .search1 {
+    display: block;
+  }
+
+  .navbar .control .video {
+    display: none;
+  }
+
+  .navbar .control {
+    margin-left: 30px;
+  }
+
+  .navbar .control a {
+    margin: auto
+  }
+
+  .navbar .control .up {
+    display: block;
+    rotate: 90deg;
+  }
+
+  .navbar .control .search,
+  .navbar .control .bell {
+    padding: 0px 20px;
+  }
+
+  .options {
+    width: 88%;
+    margin: auto;
+    margin-left: 100px;
+    padding: 10px 0 20px 0;
+  }
+
+  .dashboard {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: auto;
+    margin-top: 150px;
+    margin-left: 100px;
+  }
+
+  .infinity {
+    padding-bottom: 50px;
+    margin-top: 0px;
+  }
+
+
+  .dashboard .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 0px;
+    margin-right: 20px;
+  }
+
+  .dashboard hr {
+    border: 2px solid gray;
+    width: 95%;
+    margin-top: 30px;
+  }
+
+
+  .section-for-shorts {
+    display: grid;
+    grid-template: 1fr;
+    width: 85%;
+    margin: auto;
+    margin-left: 100px;
+  }
+
+  .section-for-shorts .shorts-grid .one,
+  .section-for-shorts .shorts-grid .two,
+  .section-for-shorts .shorts-grid .three,
+  .section-for-shorts .shorts-grid .four,
+  .section-for-shorts .shorts-grid .five {
+    display: block;
+  }
+
+  .section-for-shorts .shorts-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 20px;
+    padding-bottom: 30px;
+    overflow: auto;
+    white-space: nowrap;
+    width: 100%;
+    margin: auto;
+    margin: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .section-for-shorts .shorts-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .section-for-shorts .shorts-card .card-shorts img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .notification-count {
+    background-color: rgba(206, 5, 5, 0.959);
+    border: none;
+    padding: 2px 4px;
+    border-radius: 10px;
+    position: relative;
+    right: 30px;
+    bottom: 8px;
+  }
+
+  .right .right-scroll {
+    position: fixed;
+    height: 100vh;
+    /* padding-bottom: 220px; */
+  }
+
+}
+
+/* ================ MediaQuery (small tab)================ */
+@media only screen and (max-width: 799px) {
+
+  .aside {
+    display: none;
+  }
+
+  .options {
+    width: 90%;
+    margin: auto;
+  }
+
+  .dashboard {
+    width: 90%;
+    margin: auto;
+    margin-top: 150px;
+  }
+
+  .dashboard .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+  }
+
+  .dashboard hr {
+    border: 2px solid gray;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .infinity {
+    padding-bottom: 50px;
+    margin-top: 0px;
+  }
+
+  .section-for-shorts {
+    display: grid;
+    grid-template: 1fr;
+    width: 90%;
+    margin: auto;
+  }
+}
+
+/* ================ MediaQuery (phones)================ */
+@media only screen and (max-width: 655px) {
+
+  .navbar .menu {
+    margin-right: 0px;
+  }
+
+  .navbar .data {
+    display: none;
+  }
+
+  .navbar .control {
+    margin-left: 0px;
+  }
+
+  .navbar .control .bell {
+    display: none;
+  }
+
+  .navbar .control .search {
+    display: block;
+    padding-right: 0px;
+  }
+
+  .navbar .control a {
+    margin: 0px 5px;
+  }
+
+  .navbar .control .search,
+  .navbar .control .bell {
+    padding: 0px 20px;
+  }
+
+  .navbar .menu {
+    margin-right: 0px;
+  }
+
+  .dashboard {
+    width: 90%;
+    margin: auto;
+    margin-top: 150px;
+  }
+
+  .infinity {
+    padding-bottom: 50px;
+    margin-top: 0px;
+  }
+
+  .dashboard .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0;
+  }
+
+  .dashboard .grid .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-for-shorts {
+    display: grid;
+    grid-template: 1fr;
+    width: 90%;
+    margin: auto;
+  }
+
+  .notification-count {
+    display: none;
+  }
+
+  aside {
+    position: fixed;
+    overflow: auto;
+    white-space: nowrap;
+    width: 250px;
+    height: 100vh;
+    top: 60px;
+    -ms-overflow-style: none;
+    scrollbar-width: 20px;
+    background-color: black;
+    z-index: 300;
+    display: none;
+  }
+
+  .right {
+    position: fixed;
+    top: 60px;
+    right: 0;
+
+  }
+
+  .right .right-scroll {
+    position: fixed;
+    top: 185px;
+    right: 0px;
+  }
+
+}
+
+/* ================ MediaQuery (phones small screen)================ */
+@media only screen and (max-width: 400px) {
+
+  .navbar {
+    justify-content: center;
+    padding: 10px 0px;
+  }
+
+  .navbar .menu img {
+    width: 100px;
+    margin: 0px;
+  }
+
+  .navbar .control .search,
+  .navbar .control .bell {
+    padding: 0px 5px;
+  }
+
+  .right .right-scroll {
+    position: fixed;
+    right: 0px;
+    top: 185px;
+    padding-bottom: 220px;
+  }
+}
